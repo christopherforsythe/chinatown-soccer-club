@@ -1,7 +1,10 @@
+/************************ nav css for all pages *********************/
+
 body {
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTqsiW9EzsPx3jHnnUI8YetFFEavRpHB75nNahMbnqOC5pC23y5VXFvS9PuUw&usqp=CAc);
+    background-image:  rl(https://i.pinimg.com/originals/91/f1/5d/91f15df4cd84e2f101263adc9b04d452.jpg);
     margin: auto;
     width: 100vw;
+    background-color: black ;
 }
 
 *{
@@ -14,6 +17,9 @@ a {
     text-decoration: none;
     color: whitesmoke;
 }
+p {
+    font-family: 'Quattrocento Sans', sans-serif;
+}
 
 nav {
     display: flex;
@@ -24,8 +30,8 @@ nav {
     background-color: black;
     opacity: 0.95;
     color: whitesmoke;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 12px;
+    padding-bottom: 10px;
     padding-left: auto;
     padding-right: auto;
 }
@@ -34,9 +40,10 @@ h1 {
     font-family: 'Lemon', cursive;
     color: whitesmoke;
     letter-spacing: 1px;
-    font-size: 2.3rem;
+    font-size: 2.5rem;
     text-align: center;
     align-items: center;
+    opacity: 1;
 }
 
 
@@ -52,6 +59,8 @@ h1 {
     font-weight: bold;
     font-size: 1rem;
 }
+
+
 .nav-links li {
     list-style: none;
 }
@@ -63,6 +72,12 @@ h1 {
 .nav-links1 {
     display: flex;
     justify-content: space-around;
+}
+
+i:hover {
+    transform: scale(1.6);
+    transition: ease .3s;
+    color: yellow;
 }
 
 .title {
@@ -77,10 +92,20 @@ h1 {
     padding: 8px;
 }
 
+.bar:hover {
+    transform-style: preserve-3d;
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-style: solid;
+    text-decoration-thickness: 6px;
+    color: yellow;
+}
+
 .bar1 {
     padding: 10px;
     font-size: 20px;
 }
+
 
 .burger div {
     width: 15px;
@@ -89,6 +114,7 @@ h1 {
     margin: 3px;
     display: flex;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .burger {
@@ -107,12 +133,13 @@ h1 {
     height: 92vh;
     top: 14vh;
     background-color: black;
-    opacity: 0.85;
+    opacity: 0.95;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 50%;
     transform: translateX(100%);
+    transition: 0.5s ease-in;
 }
 
 .nav-links li {
@@ -123,4 +150,147 @@ h1 {
     display: block;
 }
 
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1{
+   transform: rotate(-180deg) translate(12px, 14px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(180deg) translate(-12px, -14px);
+}
+
+/*********************Play Page***************/
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+h2 {
+    margin: auto;
+    text-align: center;
+    left: 8%;
+    font-family: 'Mukta', sans-serif;
+    font-size: 4rem;
+    color: yellow;
+    letter-spacing: 10px;
+}
+
+
+.image-carousel-container {
+    position: relative;
+    width: 60%;
+    margin: auto;
+    border: 1.5px solid black;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-carousel {
+    display: flex;
+    width: 100%;
+    height: 500px;
+}
+
+.image-carousel img {
+    width: 100%;
+}
+
+#prevBtn {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    left: 5%;
+    font-size: 30px;
+    color: white;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+#nextBtn {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    right: 5%;
+    font-size: 30px;
+    color: white;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+/*************collab page ********************/
+
+.main-container {
+    width: 100%;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 50% 50%;
+    column-gap: 2px;
+    row-gap: 2px;
+    padding-top: 25px;
+}
+
+.img-grid {
+    width: 100%;
+    height: 100%;
+}
+
+.box1{
+    position: relative;
+}
+
+.box2 {
+    position: relative;
+}
+
+.box3 {
+    position: relative;
+}
+
+.box4 {
+    position: relative;
+}
+
+.overlay {
+    background-color: rgba(207, 0, 15, 1);
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding: 70px;
+    transition: opacity .5s;
+}
+
+.overlay:hover {
+    opacity: 0.8;
+    transition: opacity .5s;
+}
+
+p {
+    color: yellow;
+    margin: auto;
+    text-align: center;
 }
