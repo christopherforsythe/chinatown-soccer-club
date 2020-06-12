@@ -1,10 +1,9 @@
 /************************ nav css for all pages *********************/
 
 body {
-    background-image:  rl(https://i.pinimg.com/originals/91/f1/5d/91f15df4cd84e2f101263adc9b04d452.jpg);
     margin: auto;
     width: 100vw;
-    background-color: black ;
+    background-color: #0b0b0d;
 }
 
 *{
@@ -27,20 +26,20 @@ nav {
     align-items: center;
     min-height: 8vh;
     font-family: 'Mukta', sans-serif;
-    background-color: black;
-    opacity: 0.95;
-    color: whitesmoke;
+    ackground-color: black;
+    opacity: 1;
+    color: white;
     padding-top: 12px;
-    padding-bottom: 10px;
+    padding-bottom: 16px;
     padding-left: auto;
     padding-right: auto;
 }
 
 h1 {
     font-family: 'Lemon', cursive;
-    color: whitesmoke;
+    color: tomato;
     letter-spacing: 1px;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     text-align: center;
     align-items: center;
     opacity: 1;
@@ -90,27 +89,25 @@ i:hover {
 
 .bar {
     padding: 8px;
+    color:tomato;
 }
 
 .bar:hover {
-    transform-style: preserve-3d;
-    text-decoration: underline;
-    text-decoration-color: red;
-    text-decoration-style: solid;
-    text-decoration-thickness: 6px;
     color: yellow;
+    transform: scale(2);
 }
 
 .bar1 {
     padding: 10px;
     font-size: 20px;
+    color: tomato;
 }
 
 
 .burger div {
     width: 15px;
     height: 2.5px;
-    background-color: whitesmoke;
+    background-color: tomato;
     margin: 3px;
     display: flex;
     cursor: pointer;
@@ -148,6 +145,7 @@ i:hover {
 
 .burger {
     display: block;
+    color: tomato;
 }
 
 }
@@ -179,13 +177,6 @@ i:hover {
 
 /*********************Play Page***************/
 
-*{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-}
-
-
 h2 {
     margin: auto;
     text-align: center;
@@ -196,20 +187,109 @@ h2 {
     letter-spacing: 10px;
 }
 
+.text-container {
+    margin: auto;
+    text-align: center;
+}
+
+span {
+    color: #ffffff;
+    font-size: 4.7rem;
+    font-weight: bolder;
+    font-family: 'Mukta', sans-serif;
+    letter-spacing: 10px;
+    animation: light 3s infinite;
+    margin: auto;
+}
+
+@keyframes light{
+    0%, 20%{
+        color: #f7ff56;
+        text-shadow: 0 0 10px yellow;
+    }
+    40%{
+        color: #c81912;
+        text-shadow: 0 0 10px red;
+    }
+    60%{
+        color: #f7ff56;
+        text-shadow: 0 0 10px yellow;
+    }
+    80%{
+        color: #c81912;
+        text-shadow: 0 0 10px red;
+    }
+    100%{
+        color: #f7ff56;
+        text-shadow: 0 0 10px yellow;
+    }
+}
+
+span:nth-child(1){animation-delay: .25s;}
+span:nth-child(2){animation-delay: .5s;}
+span:nth-child(3){animation-delay: .75s;}
+span:nth-child(4){animation-delay: 1s;}
+
+/********* ABOUT PAGE ********/
+
+.about-main-container {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-auto-rows: minmax(175px, auto);
+    column-gap: 10px;
+}
+
+
+.about-image-box {
+    background-color: wheat;
+    overflow: hidden;
+}
+
+.badge-box {
+    margin-right:  25px;
+    ackground-color: violet;
+    float: left;
+}
+
+#badge {
+    height: 175px;
+    width: 175px;
+}
+
+.about-box1 {
+    float: right;
+}
+
+.about-box2 {
+    background-color: brown;
+    width: 80%
+}
+
+
+.video-box {
+    margin: auto;
+    background-color: cadetblue;
+
+}
+
+.video1 {
+    margin: 0 auto;
+    align-self: center;
+}
 
 .image-carousel-container {
     position: relative;
-    width: 60%;
-    margin: auto;
     border: 1.5px solid black;
     overflow: hidden;
     position: relative;
+    background-color: chartreuse;
 }
 
 .image-carousel {
     display: flex;
     width: 100%;
-    height: 500px;
+    height: 430px;
 }
 
 .image-carousel img {
@@ -241,14 +321,15 @@ h2 {
 /*************collab page ********************/
 
 .main-container {
-    width: 100%;
+    width: 93%;
+    margin: auto;
     justify-content: center;
     display: grid;
     grid-template-columns: 45% 45%;
-    grid-template-rows: 50% 50%;
-    column-gap: 2px;
-    row-gap: 2px;
-    padding-top: 25px;
+    grid-template-rows: 33% 33% 33%;
+    column-gap: 10px;
+    row-gap: 10px;
+    padding-top: 18px;
 }
 
 .img-grid {
@@ -272,8 +353,16 @@ h2 {
     position: relative;
 }
 
+.box5 {
+    position: relative;
+}
+
+.box6 {
+    position: relative;
+}
+
 .overlay {
-    background-color: rgba(207, 0, 15, 1);
+    background-color: rgba(207, 0, 15, .8);
     height: 100%;
     width: 100%;
     opacity: 0;
@@ -284,13 +373,70 @@ h2 {
     transition: opacity .5s;
 }
 
+
+
 .overlay:hover {
-    opacity: 0.8;
+    opacity: 1;
     transition: opacity .5s;
 }
+
+
 
 p {
     color: yellow;
     margin: auto;
     text-align: center;
+}
+
+#p-collab {
+        color: yellow;
+        margin: auto;
+        text-align: center;
+        font-size: small;
+}
+
+
+/*************** HOME AND ABOUT styling **************/
+
+.video-container {
+    z-index: 0;
+    overflow: hidden;
+    height: 100vh;
+    position: relative;
+}
+
+video {
+    height: 100vh;
+}
+
+#text-overlay {
+    z-index: 1;
+    position: absolute;
+    top: 29%;
+    left: 5%;
+    width: 90%;
+}
+
+#h2-1 {
+    margin: auto;
+    text-align: center;
+    font-family: 'Mukta', sans-serif;
+    color: yellow;
+    font-size: 4rem;
+    letter-spacing: 10px;
+}
+
+#p1 {
+    margin: auto;
+    text-align: center;
+    font-family: 'Mukta', sans-serif;
+    color: yellow;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+.main-container p {
+        color: yellow;
+        margin: auto;
+        text-align: center;
 }
