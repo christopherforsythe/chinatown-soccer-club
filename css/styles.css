@@ -26,20 +26,20 @@ nav {
     align-items: center;
     min-height: 8vh;
     font-family: 'Mukta', sans-serif;
-    ackground-color: black;
     opacity: 1;
     color: white;
     padding-top: 12px;
     padding-bottom: 16px;
     padding-left: auto;
     padding-right: auto;
+    background-color: black;
 }
 
 h1 {
     font-family: 'Lemon', cursive;
     color: tomato;
     letter-spacing: 1px;
-    font-size: 2.2rem;
+    font-size: 2.3rem;
     text-align: center;
     align-items: center;
     opacity: 1;
@@ -94,7 +94,6 @@ i:hover {
 
 .bar:hover {
     color: yellow;
-    transform: scale(2);
 }
 
 .bar1 {
@@ -130,7 +129,7 @@ i:hover {
     height: 92vh;
     top: 14vh;
     background-color: black;
-    opacity: 0.95;
+    opacity: ;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -173,6 +172,17 @@ i:hover {
 }
 .toggle .line3{
     transform: rotate(180deg) translate(-12px, -14px);
+}
+
+#index-footer {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#badge {
+    height: 150px;
+    width: 1250px;
+    padding: 10px;
 }
 
 /*********************Play Page***************/
@@ -233,50 +243,60 @@ span:nth-child(4){animation-delay: 1s;}
 /********* ABOUT PAGE ********/
 
 .about-main-container {
-    margin-top: 10px;
+    margin-top: 0px;
     display: grid;
-    grid-template-columns: 60% 40%;
-    grid-auto-rows: minmax(175px, auto);
+    grid-template-columns: 4fr 6fr;
     column-gap: 10px;
+    overflow: hidden;
+    height: 100vh;
 }
-
 
 .about-image-box {
-    background-color: wheat;
     overflow: hidden;
+    height: 100vh;
 }
 
-.badge-box {
-    margin-right:  25px;
-    ackground-color: violet;
-    float: left;
-}
-
-#badge {
-    height: 175px;
-    width: 175px;
-}
-
-.about-box1 {
-    float: right;
-}
-
-.about-box2 {
-    background-color: brown;
-    width: 80%
-}
-
-
-.video-box {
+.text-about-box-heading {
+    width: 70%;
     margin: auto;
-    background-color: cadetblue;
-
+    text-align: start;
 }
 
-.video1 {
-    margin: 0 auto;
-    align-self: center;
+.text-about-box-content {
+    width: 60%;
+    margin: auto;
+    text-align: left;
 }
+
+
+#h2-about {
+    padding-bottom: 2px;
+    font-size: 6.5rem;
+}
+
+#p-about {
+    letter-spacing: 0.7px;
+    line-height: 23px;
+    padding-bottom: 18px;
+    font-size: 14px;
+    text-align: left;
+}
+
+#p-about1 {
+    letter-spacing: 0.7px;
+    line-height: 23px;
+    font-size: 14px;
+    text-align: left;
+    padding-bottom: 15px;
+}
+
+#p-about2 {
+    letter-spacing: 0.7px;
+    line-height: 23px;
+    font-size: 14px;
+    text-align: left;
+}
+
 
 .image-carousel-container {
     position: relative;
@@ -317,6 +337,8 @@ span:nth-child(4){animation-delay: 1s;}
     opacity: 0.9;
     cursor: pointer;
 }
+
+
 
 /*************collab page ********************/
 
@@ -439,4 +461,26 @@ video {
         color: yellow;
         margin: auto;
         text-align: center;
+}
+
+footer {
+    margin: auto;
+    text-align: center;
+    padding: 7px;
+}
+
+li {
+    display: inline-block;
+    font-family: 'Mukta', sans-serif;
+    margin: auto;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+#collab-footer {
+    margin: auto;
+    font-family: 'Mukta', sans-serif;
+    color: yellow;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
