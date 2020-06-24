@@ -232,3 +232,58 @@ carouselSlide.addEventListener('transitionend', () => {
  <div class="box about-box2">
     <p>the Chinatown Soccer Club is one of the most inspirational soccer clubs around. It was founded in 2002, when adidas invited crews from New York's creative industry to take part in the Fanatic Tournament.</p>
  </div>
+
+.about-main-container {
+    margin-top: 0px;
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    column-gap: 10px;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.about-image-box {
+    overflow: hidden;
+    height: 100vh;
+}
+
+.text-about-box-heading {
+    width: 70%;
+    margin: auto;
+    text-align: start;
+}
+
+.text-about-box-content {
+    width: 60%;
+    margin: auto;
+    text-align: left;
+}
+
+
+#h2-about {
+    padding-bottom: 2px;
+    font-size: 6.5rem;
+}
+
+#p-about {
+    letter-spacing: 0.7px;
+    line-height: 23px;
+    padding-bottom: 18px;
+    font-size: 14px;
+    text-align: left;
+}
+
+#p-about1 {
+    letter-spacing: 0.7px;
+    line-height: 23px;
+    font-size: 14px;
+    text-align: left;
+    padding-bottom: 15px;
+}
+
+#p-about2 {
+    letter-spacing: 0.7px;
+    line-height: 23px;
+    font-size: 14px;
+    text-align: left;
+}
